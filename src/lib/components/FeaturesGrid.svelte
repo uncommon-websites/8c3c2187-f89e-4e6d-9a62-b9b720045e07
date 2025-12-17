@@ -2,27 +2,27 @@
 	<div class="container-custom">
 		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 			<div class="space-y-2">
-				<h3 class="font-medium text-sm">Highest accuracy</h3>
+				<h3 class="font-medium text-sm">3x Higher Throughput</h3>
 				<p class="text-xs text-muted leading-relaxed">
-					Production-ready outputs built on cross-referenced facts, with minimal hallucination.
+					Breakthrough algebraic optimization delivers 3x AI inference performance on any hardware.
 				</p>
 			</div>
 			<div class="space-y-2">
-				<h3 class="font-medium text-sm">Predictable costs</h3>
+				<h3 class="font-medium text-sm">One-Third Energy Cost</h3>
 				<p class="text-xs text-muted leading-relaxed">
-					Flex compute budget based on task complexity. Pay per query, not per token.
+					Reduce energy consumption by 66% with constant-time memory operations and optimized data flow.
 				</p>
 			</div>
 			<div class="space-y-2">
-				<h3 class="font-medium text-sm">Evidence-based outputs</h3>
+				<h3 class="font-medium text-sm">Hardware-Agnostic</h3>
 				<p class="text-xs text-muted leading-relaxed">
-					Verifiability and provenance for every atomic output.
+					Virtual compute layer works on any processor—no specialized hardware or GPU upgrades required.
 				</p>
 			</div>
 			<div class="space-y-2">
-				<h3 class="font-medium text-sm">Trusted</h3>
+				<h3 class="font-medium text-sm">Drop-In Compatible</h3>
 				<p class="text-xs text-muted leading-relaxed">
-					SOC-II Type 2 Certified, trusted by leading startups and enterprises.
+					Zero code changes needed. Works beneath existing AI frameworks automatically.
 				</p>
 			</div>
 		</div>
@@ -34,22 +34,22 @@
 		<div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-center">
 			<div class="md:col-span-1">
 				<p class="font-mono text-xs text-muted w-3/4">
-					Powering the best AIs using the web
+					Trusted by leading AI organizations
 				</p>
 			</div>
 			<div class="md:col-span-3 flex flex-wrap items-center justify-between gap-8 grayscale opacity-70 hover:opacity-100 transition-opacity">
-				<!-- Logo Placeholders -->
+				<!-- Partner Logos -->
 				<div class="flex items-center gap-2 font-bold text-xl">
-					<div class="w-6 h-6 bg-red-500 rounded-sm"></div>
-					floqer
+					<div class="w-6 h-6 bg-orange-500 rounded-sm"></div>
+					Caltech
 				</div>
 				<div class="flex items-center gap-2 font-bold text-xl">
-					<div class="w-6 h-6 bg-blue-500 rounded-full"></div>
-					genpact
+					<div class="w-6 h-6 bg-red-600 rounded-sm"></div>
+					Red Hat
 				</div>
 				<div class="flex items-center gap-2 font-bold text-xl">
-					<div class="w-6 h-6 bg-pink-500 rounded-full border-2 border-black"></div>
-					Gumloop
+					<div class="w-6 h-6 bg-blue-700 rounded-sm"></div>
+					US DOE
 				</div>
 			</div>
 		</div>

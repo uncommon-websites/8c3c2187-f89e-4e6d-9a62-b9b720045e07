@@ -2,35 +2,53 @@
 	import FeatureBlock from './FeatureBlock.svelte';
 </script>
 
-<!-- Block 1: Search, built for AIs -->
+<!-- Block 1: Virtual Compute Acceleration -->
 <FeatureBlock 
-	title="Search, built for AIs" 
-	description="The most accurate search tool, to bring web context to your AI agents."
+	title="Virtual Compute Acceleration" 
+	description="Hardware-agnostic virtualization layer that delivers 3x AI throughput on any processor through algebraic memory optimization."
 	buttons={[
-		{ text: "GIVE AI SEARCH A TRY", icon: true },
-		{ text: "LEARN MORE" }
+		{ text: "TRY THE PLATFORM", icon: true },
+		{ text: "READ TECHNICAL DOCS" }
 	]}
 >
 	<div class="w-full h-full bg-white border border-border rounded shadow-sm p-4 font-mono text-xs">
 		<div class="flex items-center gap-2 border-b border-border pb-2 mb-4">
-			<span class="text-accent">></span>
-			<span class="text-muted">Agent</span>
+			<span class="text-accent">○</span>
+			<span class="text-muted">Virtual Compute Layer</span>
 			<span class="w-2 h-4 bg-accent animate-pulse"></span>
 		</div>
-		<div class="space-y-2 opacity-50">
-			<div class="h-2 bg-gray-100 w-3/4 rounded"></div>
-			<div class="h-2 bg-gray-100 w-1/2 rounded"></div>
-			<div class="h-2 bg-gray-100 w-5/6 rounded"></div>
+		<div class="space-y-3">
+			<div class="flex items-center gap-2">
+				<div class="w-16 text-[10px] text-muted">CPU</div>
+				<div class="flex-1 h-2 bg-gray-100 rounded overflow-hidden">
+					<div class="h-full bg-accent w-[90%]"></div>
+				</div>
+				<span class="text-[10px] text-accent">3x</span>
+			</div>
+			<div class="flex items-center gap-2">
+				<div class="w-16 text-[10px] text-muted">Memory</div>
+				<div class="flex-1 h-2 bg-gray-100 rounded overflow-hidden">
+					<div class="h-full bg-primary-400 w-[60%]"></div>
+				</div>
+				<span class="text-[10px] text-muted">-40%</span>
+			</div>
+			<div class="flex items-center gap-2">
+				<div class="w-16 text-[10px] text-muted">Energy</div>
+				<div class="flex-1 h-2 bg-gray-100 rounded overflow-hidden">
+					<div class="h-full bg-green-500 w-[33%]"></div>
+				</div>
+				<span class="text-[10px] text-green-600">-66%</span>
+			</div>
 		</div>
 	</div>
 </FeatureBlock>
 
-<!-- Block 2: The most accurate deep and wide research -->
+<!-- Block 2: Atlas Mathematical Framework -->
 <FeatureBlock 
-	title="The most accurate deep and wide research" 
-	description="Run deeper and more accurate research at scale, for the same compute budget"
+	title="Atlas Mathematical Framework" 
+	description="Breakthrough algebraic system converting byte-level operations into precomputed, constant-time memory lookups for O(1) computation."
 	buttons={[
-		{ text: "RUN A QUERY", icon: true }
+		{ text: "EXPLORE FRAMEWORK", icon: true }
 	]}
 	alignRight={true}
 >
@@ -39,114 +57,142 @@
 			<div class="w-4 h-4 border border-current rounded-sm flex items-center justify-center">
 				<div class="w-2 h-2 bg-current rounded-[1px]"></div>
 			</div>
-			Starting research...
+			Constant-time computation
 		</div>
-		<div class="w-full bg-gray-100 h-1.5 rounded-full overflow-hidden">
-			<div class="bg-accent h-full w-2/3"></div>
+		<div class="grid grid-cols-3 gap-2 text-center text-[10px] font-mono">
+			<div class="border border-border p-2 rounded">
+				<div class="text-muted mb-1">Traditional</div>
+				<div class="text-lg font-bold">O(n)</div>
+			</div>
+			<div class="border border-accent bg-accent/5 p-2 rounded">
+				<div class="text-accent mb-1">Atlas</div>
+				<div class="text-lg font-bold text-accent">O(1)</div>
+			</div>
+			<div class="border border-border p-2 rounded">
+				<div class="text-muted mb-1">Speedup</div>
+				<div class="text-lg font-bold text-green-600">3x</div>
+			</div>
 		</div>
-		<div class="flex gap-1">
-			{#each Array(20) as _}
-				<div class="w-1 h-3 bg-gray-200"></div>
+		<div class="flex gap-1 mt-2">
+			{#each Array(20) as _, i}
+				<div class="w-1 h-3 {i < 7 ? 'bg-accent' : 'bg-gray-200'}"></div>
 			{/each}
 		</div>
-		<div class="mt-2 flex items-center gap-2 text-[10px] text-muted font-mono uppercase">
-			<span class="w-3 h-3 border border-current rounded-full flex items-center justify-center">i</span>
-			SEARCHING
+		<div class="mt-2 flex items-center gap-2 text-[10px] text-accent font-mono uppercase">
+			<span class="w-3 h-3 border border-current rounded-full flex items-center justify-center">✓</span>
+			MATHEMATICAL PROOF VERIFIED
 		</div>
 	</div>
 </FeatureBlock>
 
-<!-- Block 3: Build a dataset from the web -->
+<!-- Block 3: Cross-Platform Deployment -->
 <FeatureBlock 
-	title="Build a dataset from the web" 
-	description="Define your search criteria in natural language, and get back a structured table of matches"
+	title="Cross-Platform Deployment" 
+	description="Universal compute layer runs on Windows, Linux, macOS, Android, iOS, and edge devices—no hardware upgrades needed."
 	buttons={[
-		{ text: "CREATE A DATASET", icon: true }
+		{ text: "VIEW COMPATIBILITY", icon: true }
 	]}
 >
 	<div class="w-full h-full bg-white border border-border rounded shadow-sm overflow-hidden font-mono text-[10px]">
 		<div class="grid grid-cols-4 gap-2 p-2 border-b border-border bg-gray-50 text-muted">
-			<div>ID</div>
-			<div>ENTITIES</div>
-			<div>IS_AI</div>
-			<div>IS_SAAS</div>
+			<div>PLATFORM</div>
+			<div>STATUS</div>
+			<div>THROUGHPUT</div>
+			<div>ENERGY</div>
 		</div>
-		{#each [1, 2, 3, 4, 5, 6] as i}
+		{#each [
+			{ name: 'Linux x86', status: 'active' },
+			{ name: 'Windows', status: 'active' },
+			{ name: 'macOS ARM', status: 'active' },
+			{ name: 'Android', status: 'active' },
+			{ name: 'iOS', status: 'active' },
+			{ name: 'Edge Device', status: 'active' }
+		] as platform, i}
 			<div class="grid grid-cols-4 gap-2 p-2 border-b border-border/50 items-center">
-				<div class="text-muted">{i}</div>
 				<div class="flex items-center gap-2">
-					<div class="w-3 h-3 rounded-full bg-blue-400/20"></div>
-					<span class="text-blue-600">Company {i}</span>
+					<div class="w-2 h-2 rounded-full bg-green-500"></div>
+					<span>{platform.name}</span>
 				</div>
-				<div class="h-1.5 w-8 bg-gray-100 rounded"></div>
-				<div class="h-1.5 w-8 bg-gray-100 rounded"></div>
+				<div class="text-green-600">Ready</div>
+				<div class="text-accent">+3x</div>
+				<div class="text-green-600">-66%</div>
 			</div>
 		{/each}
 	</div>
 </FeatureBlock>
 
-<!-- Block 4: Custom web enrichment -->
+<!-- Block 4: Enterprise-Grade Security -->
 <FeatureBlock 
-	title="Custom web enrichment" 
-	description="Bring existing data, define output columns to research, and get fresh web enrichments back"
+	title="Enterprise-Grade Security" 
+	description="Air-gapped deployment, compliance-ready architecture, and verifiable computation with mathematical proofs for regulated industries."
 	buttons={[
-		{ text: "ENRICH YOUR DATA", icon: true }
+		{ text: "SECURITY OVERVIEW", icon: true }
 	]}
 	alignRight={true}
 >
 	<div class="w-full h-full bg-white border border-border rounded shadow-sm overflow-hidden font-mono text-[10px]">
 		<div class="grid grid-cols-4 gap-2 p-2 border-b border-border bg-gray-50 text-muted">
-			<div>ID</div>
-			<div>ENTITIES</div>
-			<div>PRODUCT RELEASES</div>
-			<div>SOC 2 STATUS</div>
+			<div>FEATURE</div>
+			<div>STATUS</div>
+			<div>COMPLIANCE</div>
+			<div>VERIFIED</div>
 		</div>
-		{#each [1, 2, 3, 4, 5, 6] as i}
+		{#each [
+			{ name: 'Air-Gapped', comp: 'DoD' },
+			{ name: 'Encrypted', comp: 'NIST' },
+			{ name: 'Verifiable', comp: 'SOC 2' },
+			{ name: 'Isolated', comp: 'FedRAMP' },
+			{ name: 'Auditable', comp: 'ISO 27001' },
+			{ name: 'Private', comp: 'GDPR' }
+		] as feature, i}
 			<div class="grid grid-cols-4 gap-2 p-2 border-b border-border/50 items-center">
-				<div class="text-muted">{i}</div>
 				<div class="flex items-center gap-2">
-					<div class="w-3 h-3 rounded-full bg-indigo-400/20"></div>
-					<span class="text-indigo-600">Entity {i}</span>
+					<div class="w-2 h-2 rounded-sm bg-green-500"></div>
+					<span>{feature.name}</span>
 				</div>
-				<div class="h-1.5 w-12 bg-gray-200 rounded animate-pulse"></div>
-				<div class="h-1.5 w-8 bg-gray-200 rounded animate-pulse"></div>
+				<div class="text-green-600">Active</div>
+				<div class="text-blue-600">{feature.comp}</div>
+				<div class="text-accent">✓</div>
 			</div>
 		{/each}
 	</div>
 </FeatureBlock>
 
-<!-- Block 5: Monitor any event on the web -->
+<!-- Block 5: Developer Experience -->
 <FeatureBlock 
-	title="Monitor any event on the web" 
-	description="Continuously monitor for any changes on the web"
+	title="Developer Experience" 
+	description="One-click kernel spin-up, one-command compilation from Python/TypeScript to native code. No learning curve required."
 	buttons={[
-		{ text: "MONITOR THE WEB", icon: true }
+		{ text: "START BUILDING", icon: true }
 	]}
 >
-	<div class="w-full h-full bg-white border border-border rounded shadow-sm p-4 flex flex-col gap-4">
-		<div class="flex items-center justify-between border-b border-border pb-2">
-			<div class="text-[10px] font-mono text-muted flex items-center gap-2">
-				<span class="w-2 h-2 bg-green-500 rounded-full"></span>
-				New breakthroughs in AI research
-			</div>
+	<div class="w-full h-full bg-black text-green-400 border border-border rounded shadow-sm p-4 flex flex-col gap-3 font-mono text-[10px]">
+		<div class="flex items-center gap-2 text-white/60">
+			<span>$</span>
+			<span class="text-white">hologram init</span>
 		</div>
 		
-		<!-- Calendar/Grid visual -->
-		<div class="grid grid-cols-12 gap-1">
-			{#each Array(48) as _, i}
-				<div class="aspect-square rounded-[1px] {i === 42 ? 'bg-accent' : (Math.random() > 0.8 ? 'bg-blue-200' : 'bg-gray-50')}"></div>
-			{/each}
+		<div class="space-y-1 text-white/40">
+			<div>✓ Initializing virtual compute layer...</div>
+			<div>✓ Loading Atlas framework...</div>
+			<div>✓ Optimizing memory mappings...</div>
+			<div class="text-green-400">✓ Ready for deployment</div>
 		</div>
 
-		<div class="mt-auto space-y-2">
-			<div class="flex items-center gap-2 text-[10px] text-muted font-mono">
-				<span class="w-3 h-3 border border-current rounded-full flex items-center justify-center text-[8px]">!</span>
-				No
-			</div>
-			<div class="bg-gray-50 p-2 rounded border border-border flex gap-2 items-center">
-				<div class="w-4 h-4 bg-gray-200 rounded"></div>
-				<div class="h-1.5 w-24 bg-gray-200 rounded"></div>
-			</div>
+		<div class="mt-2 flex items-center gap-2 text-white/60 border-t border-white/10 pt-3">
+			<span>$</span>
+			<span class="text-white">hologram compile model.py</span>
+		</div>
+
+		<div class="space-y-1 text-white/40">
+			<div>→ Compiling to native code...</div>
+			<div class="text-accent">→ 3x performance gain detected</div>
+			<div class="text-green-400">✓ Build complete: 847ms</div>
+		</div>
+
+		<div class="mt-auto flex items-center gap-2 text-[9px] text-white/30">
+			<span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+			Virtual compute active
 		</div>
 	</div>
 </FeatureBlock>

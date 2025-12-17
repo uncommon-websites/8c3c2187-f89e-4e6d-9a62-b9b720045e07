@@ -5,38 +5,37 @@
 			<!-- Left Column: CTA & Visual -->
 			<div class="flex flex-col h-full">
 				<div class="mb-8">
-					<p class="font-mono text-xs text-muted mb-4">Start building</p>
-					<h2 class="text-2xl font-medium mb-4">Towards a programmatic web for AIs</h2>
+					<p class="font-mono text-xs text-muted mb-4">Get started</p>
+					<h2 class="text-2xl font-medium mb-4">The universal virtualization layer for AI</h2>
 					<p class="text-muted font-light mb-8 text-sm leading-relaxed max-w-md">
-						Parallel is building new interfaces, infrastructure, and business models for AIs to work with the web
+						Hologram breaks through the three physical walls blocking AI scaling: Power, Memory, and Energy. Deploy on any hardware, no code changes required.
 					</p>
 					<div class="flex gap-3 mb-12">
 						<button class="border border-border px-3 py-1.5 text-xs font-mono uppercase hover:bg-primary-50 transition-colors flex items-center gap-2">
-							TRY IT FOR FREE
-							<span class="text-muted border border-muted/30 rounded px-1 text-[9px] min-w-[16px] text-center">P</span>
+							REQUEST ACCESS
+							<span class="text-muted border border-muted/30 rounded px-1 text-[9px] min-w-[16px] text-center">R</span>
 						</button>
 						<button class="border border-border px-3 py-1.5 text-xs font-mono uppercase hover:bg-primary-50 transition-colors flex items-center gap-2">
-							JOIN US
-							<span class="text-muted border border-muted/30 rounded px-1 text-[9px] min-w-[16px] text-center">J</span>
+							READ DOCS
+							<span class="text-muted border border-muted/30 rounded px-1 text-[9px] min-w-[16px] text-center">D</span>
 						</button>
 					</div>
 				</div>
 				
-				<!-- Barcode Visual -->
+				<!-- Geometric Visual -->
 				<div class="mt-auto w-full h-48 bg-black relative overflow-hidden flex items-center justify-center">
-					{#each Array(100) as _, i}
-						<div 
-							class="h-full bg-white absolute" 
-							style="
-								left: {i}%; 
-								width: {Math.random() * 2}%; 
-								opacity: {Math.random()};
-							"
-						></div>
-					{/each}
+					<!-- Hexagonal pattern -->
+					<svg class="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
+						<defs>
+							<pattern id="hex" width="50" height="43.4" patternUnits="userSpaceOnUse" patternTransform="scale(1.5)">
+								<polygon points="24.8,22 37.3,29.2 37.3,43.7 24.8,51 12.3,43.7 12.3,29.2" fill="none" stroke="white" stroke-width="0.5"/>
+							</pattern>
+						</defs>
+						<rect width="100%" height="100%" fill="url(#hex)" />
+					</svg>
 					<div class="absolute inset-0 flex items-center justify-center">
-						<div class="bg-black text-white font-mono text-[10px] px-2 py-1 z-10">
-							parallel.web
+						<div class="bg-black text-white font-mono text-[10px] px-3 py-1.5 z-10 border border-primary-500/30">
+							hologram.compute
 						</div>
 					</div>
 				</div>
@@ -44,57 +43,57 @@
 
 			<!-- Right Column: Updates -->
 			<div>
-				<p class="font-mono text-xs text-muted mb-8">Latest updates</p>
+				<p class="font-mono text-xs text-muted mb-8">Latest milestones</p>
 				
 				<div class="space-y-12">
 					<!-- Update 1 -->
 					<div class="flex gap-8 group">
-						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">November 20</div>
+						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">Q1 2025</div>
 						<div>
-							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Introducing Parallel Extract</h3>
+							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">US Department of Energy Pilot Program</h3>
 							<p class="text-xs text-muted leading-relaxed mb-3">
-								Parallel Extract converts web pages into LLM-ready markdown format. It operates in two modes: compressed excerpts (dense, semantically relevant content) and full content extraction (complete page content). The API is designed for AI agents and handles challenging web content including JavaScript-rendered sites and complex PDFs, making it useful for tasks like documentation extraction, research paper processing, and financial filing analysis.
+								Hologram selected for early-stage pilot program with the US Department of Energy, providing high-performance, energy-efficient compute for the Genesis mission. This validates Hologram's potential for government and defense applications where energy efficiency and security are critical.
 							</p>
-							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Product Release</span>
+							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Partnership</span>
 						</div>
 					</div>
 
 					<!-- Update 2 -->
 					<div class="flex gap-8 group">
-						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">November 15</div>
+						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">Q4 2024</div>
 						<div>
-							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Introducing Parallel FindAll</h3>
+							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Caltech Enterprise Neurosystems Collaboration</h3>
 							<p class="text-xs text-muted leading-relaxed mb-3">
-								Parallel's new FindAll API turns natural language queries into custom datasets from the web. It finds entities like companies, people, or locations based on your criteria, then enriches them with structured data—all with citations. FindAll Pro achieves 61% recall, 3x better than competitors.
+								Partnership with Caltech's Enterprise Neurosystems group to apply Hologram's Atlas mathematical framework to environmental telemetry data models. Demonstrates the versatility of Hologram's approach beyond traditional AI workloads.
 							</p>
 							<div class="flex gap-2">
-								<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Product Release</span>
-								<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Benchmarks</span>
+								<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Research</span>
+								<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Environmental AI</span>
 							</div>
 						</div>
 					</div>
 
 					<!-- Update 3 -->
 					<div class="flex gap-8 group">
-						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">November 13</div>
+						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">Q4 2024</div>
 						<div>
-							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Introducing Parallel Monitor</h3>
+							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Uganda Government AI Lab Sponsorship</h3>
 							<p class="text-xs text-muted leading-relaxed mb-3">
-								Parallel Monitor can be thought of as a web search that's always on: you define a query that kicks off an ongoing stream of updates every time new related information appears on the web.
+								Hologram sponsors AI lab for Uganda government, building high-performance language models on standard non-GPU processors. Proves that developing nations can access cutting-edge AI without massive energy infrastructure or expensive specialized hardware.
 							</p>
-							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Product Release</span>
+							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Global Impact</span>
 						</div>
 					</div>
 
 					<!-- Update 4 -->
 					<div class="flex gap-8 group">
-						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">November 12</div>
+						<div class="font-mono text-xs text-muted w-24 shrink-0 pt-1">Q3 2024</div>
 						<div>
-							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Parallel raises $100M Series A to build web infrastructure for agents</h3>
+							<h3 class="font-medium text-sm mb-2 group-hover:text-accent transition-colors cursor-pointer">Red Hat Community Adopts Hologram for ARC-AGI</h3>
 							<p class="text-xs text-muted leading-relaxed mb-3">
-								Parallel raises $100M Series A at a 740M valuation.
+								Red Hat community uses Hologram for low-energy geometric AI models targeting the ARC-AGI competition, replacing expensive GPU stacks. Validates Hologram's enterprise-grade capabilities and open-source community fit.
 							</p>
-							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Fundraise</span>
+							<span class="bg-gray-100 text-[10px] px-1.5 py-0.5 rounded text-muted">Community</span>
 						</div>
 					</div>
 				</div>
